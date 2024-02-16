@@ -137,6 +137,8 @@ int main(int argc, char** argv) {
         }
     }
 
+    clear_simulation();
+
     cudaDeviceSynchronize();
     auto end_time = std::chrono::steady_clock::now();
 
