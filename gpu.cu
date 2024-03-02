@@ -84,3 +84,8 @@ void simulate_one_step(particle_t* parts, int num_parts, double size) {
     // Move particles
     move_gpu<<<blks, NUM_THREADS>>>(parts, num_parts, size);
 }
+
+// Clear allocations
+void clear_simulation() {
+
+}
